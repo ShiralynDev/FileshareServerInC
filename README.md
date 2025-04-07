@@ -1,1 +1,3 @@
-A server that fetches the Simrail server timzone offsets every 6 hours and chaches them. 
+A fileshare server made in C, to be used with
+https://github.com/ShiralynDev/FileShareClient
+Still has flaws being worked on, do not use this if you want a secure filesharing server, this being coded in C should say enough...
