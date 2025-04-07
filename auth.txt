@@ -1,0 +1,2 @@
+Like always, first row is a comment lol, this is prob a dumb solution but it is temporary until I find a better solution, 1 row per user, encoded in B64 username.password
+dGVzdA.MTIz
