@@ -5,7 +5,7 @@
 #include <dirent.h>
 #include "Base64.h"
 
-#define ROOT_DIR "/home/shiralyn/"
+#define ROOT_DIR "/mnt/stuff/" // Load from config
 
 char* getAuthCode(char* authStringPointer) {
     char authString[1024];
