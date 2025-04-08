@@ -61,8 +61,6 @@ char* getAuthCode(char* authStringPointer) {
         char passwordFile[1024];
         for (int j = 0; j < 1024; j++) {
             passwordFile[j] = token[j];
-            if (token[j] == '\0')
-                break;
         }
         if (strcmp(passwordFile, password) != 0) {
             fclose(authFile);
