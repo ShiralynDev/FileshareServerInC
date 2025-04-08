@@ -92,11 +92,7 @@ void handle_request(struct http_request_s* request) {
     http_response_header(response, "Access-Control-Allow-Methods", "GET, POST, OPTIONS");
     http_response_header(response, "Content-Type", "text/plain");
     http_response_header(response, "Access-Control-Allow-Headers", contentType);
-    if (fileSize > 0) {
-        http_response_body(response, responseBody, fileSize);
-    } else {
-        http_response_body(response, responseBody, strlen(responseBody));
-    }
+    http_response_body(response, responseBody, strlen(responseBody));
     http_respond(request, response);
 }
 
