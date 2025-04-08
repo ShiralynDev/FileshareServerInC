@@ -101,6 +101,6 @@ void handle_request(struct http_request_s* request) {
 }
 
 int main() {
-    struct http_server_s* server = http_server_init(8080, handle_request);
+    struct http_server_s* server = http_server_init(8081, handle_request); // Make port be loaded from config file or smth
     http_server_listen(server);
 }
